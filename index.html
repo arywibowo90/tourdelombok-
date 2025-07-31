@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour DeLombok</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => {
+        el.style.display = el.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-emerald-700 text-white text-center py-6">
+  <h1 class="text-3xl font-bold">Tour DeLombok</h1>
+  <p class="mt-2">Explore the Beauty of Lombok Island with Us</p>
+  <div class="mt-4">
+    <button onclick="switchLang('id')" class="mx-2 px-3 py-1 bg-white text-emerald-700 rounded">🇮🇩 Indonesia</button>
+    <button onclick="switchLang('en')" class="mx-2 px-3 py-1 bg-white text-emerald-700 rounded">🇬🇧 English</button>
+  </div>
+</header>
+
+<!-- Paket Tour -->
+<section class="max-w-4xl mx-auto px-6 py-10">
+  <div class="lang id block">
+    <h2 class="text-2xl font-semibold mb-4">Paket Wisata</h2>
+    <ul class="space-y-6">
+      <li><strong>Snorkeling Tour:</strong> Wisata ke Gili Trawangan, Gili Meno dan Gili Air.</li>
+      <li><strong>Rinjani Trekking:</strong> Pendakian ke gunung Rinjani 2H1M atau 3H2M.</li>
+      <li><strong>Tour Adat Sasak:</strong> Desa Sade, Tenun Tradisional, Pantai Kuta Mandalika.</li>
+      <li><strong>Sendang Gile Waterfall:</strong> Kunjungi air terjun eksotis di kaki Rinjani.</li>
+    </ul>
+  </div>
+
+  <div class="lang en hidden">
+    <h2 class="text-2xl font-semibold mb-4">Tour Packages</h2>
+    <ul class="space-y-6">
+      <li><strong>Snorkeling Tour:</strong> Trip to Gili Trawangan, Meno and Air.</li>
+      <li><strong>Rinjani Trekking:</strong> 2D1N or 3D2N hike to majestic Mount Rinjani.</li>
+      <li><strong>Sasak Cultural Tour:</strong> Visit Sade Village, Traditional Weaving, Kuta Beach.</li>
+      <li><strong>Sendang Gile Waterfall:</strong> Waterfall tour at Rinjani’s foot.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section class="bg-white py-10 px-6">
+  <h2 class="text-2xl font-semibold text-center mb-6">Galeri</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+    <img src="https://source.unsplash.com/400x300/?snorkeling,lombok" class="rounded-lg">
+    <img src="https://source.unsplash.com/400x300/?mountain,rinjani" class="rounded-lg">
+    <img src="https://source.unsplash.com/400x300/?sasak,village" class="rounded-lg">
+    <img src="https://source.unsplash.com/400x300/?waterfall,lombok" class="rounded-lg">
+  </div>
+</section>
+
+<!-- Testimoni -->
+<section class="bg-gray-100 py-10 px-6">
+  <h2 class="text-2xl font-semibold text-center mb-6">Testimoni Pelanggan</h2>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <div class="bg-white p-4 shadow rounded">
+      <p>"Lombok is paradise! Tour DeLombok arranged everything perfectly."</p>
+      <p class="text-sm text-right mt-2">- Sarah, UK</p>
+    </div>
+    <div class="bg-white p-4 shadow rounded">
+      <p>"Pengalaman terbaik selama di Lombok, pelayanan sangat ramah."</p>
+      <p class="text-sm text-right mt-2">- Dimas, Jakarta</p>
+    </div>
+  </div>
+</section>
+
+<!-- Form Pemesanan -->
+<section class="py-10 px-6 bg-white">
+  <h2 class="text-2xl font-semibold text-center mb-6">Form Pemesanan Tour</h2>
+  <form class="max-w-xl mx-auto bg-gray-50 p-6 rounded shadow space-y-4">
+    <input type="text" placeholder="Nama Lengkap" class="w-full border p-2 rounded" required>
+    <input type="email" placeholder="Email" class="w-full border p-2 rounded" required>
+    <input type="tel" placeholder="No. WhatsApp" class="w-full border p-2 rounded" required>
+    <select class="w-full border p-2 rounded">
+      <option>Pilih Paket Tour</option>
+      <option>Snorkeling Tour</option>
+      <option>Rinjani Trekking</option>
+      <option>Sasak Tour</option>
+      <option>Sendang Gile Waterfall</option>
+    </select>
+    <textarea placeholder="Catatan Tambahan..." class="w-full border p-2 rounded"></textarea>
+    <button type="submit" class="w-full bg-emerald-600 text-white p-3 rounded hover:bg-emerald-700">Kirim Pemesanan</button>
+  </form>
+</section>
+
+<!-- WhatsApp Button -->
+<div class="fixed bottom-4 right-4">
+  <a href="https://wa.me/6285339422340" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg">
+    Chat via WhatsApp
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-emerald-800 text-white text-center py-4 mt-10">
+  <p>&copy; 2025 Tour DeLombok. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
